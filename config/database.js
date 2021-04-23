@@ -4,12 +4,12 @@ module.exports = ({ env }) => ({
     default: {
       connector: 'mongoose',
       settings: {
-        host: env('DATABASE_HOST'),
+        host: env('DATABASE_HOST', 'cluster0.gi0rm.mongodb.net'),
         srv: env.bool('DATABASE_SRV', true),
         port: env.int('DATABASE_PORT', 27017),
-        database: env('DATABASE_NAME'),
-        username: env('DATABASE_USERNAME'),
-        password: env('DATABASE_PASSWORD'),
+        database: env('DATABASE_NAME', 'genesis-training'),
+        username: env('DATABASE_USERNAME', 'Admin'),
+        password: env('DATABASE_PASSWORD', 'minecraft'),
       },
       options: {
         authenticationDatabase: env('AUTHENTICATION_DATABASE', null),
@@ -18,3 +18,7 @@ module.exports = ({ env }) => ({
     },
   },
 });
+
+
+
+
