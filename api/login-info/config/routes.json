@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/login-infos",
+      "handler": "login-info.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/login-infos/count",
+      "handler": "login-info.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/login-infos/:id",
+      "handler": "login-info.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/login-infos",
+      "handler": "login-info.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/login-infos/:id",
+      "handler": "login-info.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/login-infos/:id",
+      "handler": "login-info.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
