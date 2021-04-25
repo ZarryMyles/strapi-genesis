@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "courses",
+  "collectionName": "login_infos",
   "info": {
-    "name": "courseList",
+    "name": "LoginInfo",
     "description": ""
   },
   "options": {
@@ -12,16 +12,19 @@
   },
   "pluginOptions": {},
   "attributes": {
+    "userId": {
+      "type": "integer"
+    },
     "name": {
       "type": "string"
     },
-    "link": {
+    "username": {
       "type": "string"
     },
-    "courseID": {
-      "type": "string"
+    "email": {
+      "type": "email"
     },
-    "preview_img": {
+    "password": {
       "type": "string"
     }
   }

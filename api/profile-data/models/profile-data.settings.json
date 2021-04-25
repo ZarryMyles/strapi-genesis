@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "profile_data",
+  "info": {
+    "name": "profileData",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "username": {
+      "type": "string"
+    },
+    "password": {
+      "type": "password"
+    },
+    "score": {
+      "type": "integer"
+    },
+    "userId": {
+      "type": "integer"
+    },
+    "email": {
+      "type": "email"
+    },
+    "currentCourseId": {
+      "type": "json"
+    },
+    "completedCourseId": {
+      "type": "json"
+    },
+    "completedCourses": {
+      "type": "json"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "course_contents",
+  "info": {
+    "name": "CourseContent"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "courseId": {
+      "type": "integer"
+    },
+    "courseTag": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "Requirements": {
+      "type": "richtext"
+    },
+    "sectionBlocks": {
+      "type": "json"
+    }
+  }
+}
