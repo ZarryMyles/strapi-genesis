@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "courses",
+  "collectionName": "quizzes",
   "info": {
-    "name": "courseList",
+    "name": "quiz",
     "description": ""
   },
   "options": {
@@ -12,17 +12,14 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "name": {
-      "type": "string"
-    },
-    "link": {
-      "type": "string"
-    },
     "courseId": {
+      "type": "integer"
+    },
+    "courseTitle": {
       "type": "string"
     },
-    "preview_img": {
-      "type": "string"
+    "questions": {
+      "type": "json"
     }
   }
 }
