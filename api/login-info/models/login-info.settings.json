@@ -12,14 +12,12 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "userId": {
-      "type": "integer"
-    },
     "name": {
       "type": "string"
     },
     "username": {
-      "type": "string"
+      "type": "string",
+      "unique": true
     },
     "email": {
       "type": "email"
