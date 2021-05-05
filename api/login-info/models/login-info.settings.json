@@ -21,9 +21,6 @@
     },
     "email": {
       "type": "email"
-    },
-    "password": {
-      "type": "string"
     }
   }
 }
